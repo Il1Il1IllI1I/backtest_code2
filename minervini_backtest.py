@@ -7,7 +7,7 @@ def backtest_strategy(ticker):
     """주식 종목 코드를 입력 받아 모든 조건이 충족되면 True를 반환하는 함수"""
     
     # 데이터 가져오기
-    data = fdr.DataReader(ticker, start="2022-06-01")
+    data = fdr.DataReader(ticker, start="2022-08-01")
     
     # 이동평균 계산
     data['MA50'] = data['Close'].rolling(window=50).mean()

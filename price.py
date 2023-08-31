@@ -36,4 +36,4 @@ def fetch_prices(input_filename, period="1mo"):
     print(f"CSV 파일 {output_filename} 저장 완료!")
 
 # 함수 실행 예제
-fetch_prices('common_08-18.csv')
+fetch_prices('common_tickers.csv', period='10d')
